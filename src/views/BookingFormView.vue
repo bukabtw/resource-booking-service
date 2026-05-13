@@ -2,7 +2,6 @@
   <BasePage>
     <template #header>{{ $t('bookings.newBooking') }}</template>
 
-    <!-- Уведомление -->
     <v-snackbar
       v-model="store.state.notification.visible"
       :color="store.state.notification.type"
@@ -78,7 +77,7 @@
           variant="outlined"
           class="mb-3"
           placeholder="email1@mail.ru, email2@mail.ru"
-          hint="Введите email через запятую"
+          :hint="$t('bookingForm.emailHint')"
           persistent-hint
         />
         <div class="text-right">
@@ -101,7 +100,6 @@
       </v-form>
     </BaseCard>
 
-    <!-- Информация о выбранном ресурсе -->
     <BaseCard v-if="selectedResource" :title="$t('bookings.form.resourceInfo')">
       <v-list density="compact">
         <v-list-item>
@@ -119,7 +117,6 @@
       </v-list>
     </BaseCard>
 
-    <!-- Существующие бронирования на эту дату -->
     <BaseCard
       v-if="form.date && form.resourceId"
       :title="$t('bookings.form.existingBookings')"

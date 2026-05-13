@@ -43,7 +43,8 @@
     "status": "Status",
     "actions": "Actions",
     "filterByType": "Filter by type",
-    "resource": "Resource"
+    "resource": "Resource",
+    "close": "Close"
   },
   "status": {
     "active": "Active",
@@ -85,5 +86,20 @@
       "createdBy": "Created by",
       "actions": "Actions"
     }
+  },
+  "calendar": {
+    "resource": "Resource",
+    "noResources": "No active resources",
+    "goToResources": "Add resources",
+    "free": "Free",
+    "noParticipants": "Not specified",
+    "legend": {
+      "confirmed": "Confirmed",
+      "pending": "Pending",
+      "free": "Free"
+    }
+  },
+  "bookingForm": {
+    "emailHint": "Enter email separated by commas"
   }
 }

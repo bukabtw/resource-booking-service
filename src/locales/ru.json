@@ -43,16 +43,17 @@
     "status": "Статус",
     "actions": "Действия",
     "filterByType": "Фильтр по типу",
-    "resource": "Ресурс"
+    "resource": "Ресурс",
+    "close": "Закрыть"
   },
   "status": {
     "active": "Активен",
     "inactive": "Неактивен"
   },
-  "bookings": {
+"bookings": {
     "newBooking": "Новое бронирование",
-    "empty": "Бронирований нет",
-    "createFirst": "Создать первое бронирование",
+    "empty": "Нет бронирований",
+    "createFirst": "Создайте первое бронирование",
     "confirm": "Подтвердить",
     "reject": "Отклонить",
     "delete": "Удалить",
@@ -85,5 +86,20 @@
       "createdBy": "Создал",
       "actions": "Действия"
     }
+  },
+  "calendar": {
+    "resource": "Ресурс",
+    "noResources": "Нет активных ресурсов",
+    "goToResources": "Добавить ресурсы",
+    "free": "Свободно",
+    "noParticipants": "Не указаны",
+    "legend": {
+      "confirmed": "Подтверждено",
+      "pending": "Ожидает",
+      "free": "Свободно"
+    }
+  },
+  "bookingForm": {
+    "emailHint": "Введите email через запятую"
   }
 }
