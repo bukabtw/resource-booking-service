@@ -1,0 +1,20 @@
+{
+  "app": {
+    "title": "Resource Booking",
+    "calendar": "Calendar",
+    "bookings": "Bookings",
+    "resources": "Resources",
+    "stats": "Statistics",
+    "about": "About",
+    "footer": "© 2026 - Resource Booking Service"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "goHome": "Go home"
+  },
+  "language": {
+    "switch": "Language",
+    "ru": "Русский",
+    "en": "English"
+  }
+}
