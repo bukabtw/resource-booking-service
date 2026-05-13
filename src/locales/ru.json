@@ -16,5 +16,36 @@
     "switch": "Язык",
     "ru": "Русский",
     "en": "English"
+  },
+  "resources": {
+    "addResource": "Добавить ресурс",
+    "editResource": "Редактировать",
+    "deleteResource": "Удалить",
+    "deleteConfirmTitle": "Удалить ресурс \"{name}\"?",
+    "editResourceTitle": "Редактировать ресурс",
+    "addResourceTitle": "Новый ресурс",
+    "types": {
+      "room": "Помещение",
+      "person": "Сотрудник",
+      "equipment": "Оборудование"
+    }
+  },
+  "common": {
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "add": "Добавить",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "name": "Название",
+    "type": "Тип",
+    "capacity": "Вместимость",
+    "responsible": "Ответственный",
+    "status": "Статус",
+    "actions": "Действия",
+    "filterByType": "Фильтр по типу"
+  },
+  "status": {
+    "active": "Активен",
+    "inactive": "Неактивен"
   }
 }
