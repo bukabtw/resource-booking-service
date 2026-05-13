@@ -1,14 +1,16 @@
 <template>
-  <BasePage>
-    <template #header>{{ $t('notFound.title') }}</template>
-    <v-card class="text-center pa-8">
-      <v-icon size="64" color="grey" class="mb-4">mdi-alert-circle-outline</v-icon>
-      <p class="text-h6">{{ $t('notFound.title') }}</p>
-      <v-btn to="/" color="primary" class="mt-4">{{ $t('notFound.goHome') }}</v-btn>
-    </v-card>
-  </BasePage>
+  <v-container class="text-center mt-16">
+    <v-icon size="120" color="grey">mdi-alert-circle-outline</v-icon>
+    <h1 class="text-h2 mt-4">404</h1>
+    <p class="text-h5 text-grey">{{ $t('notFound.title') }}</p>
+    <p class="text-grey mt-2">{{ $t('notFound.description') }}</p>
+    <v-btn color="primary" size="large" to="/" class="mt-6">
+      {{ $t('notFound.goHome') }}
+    </v-btn>
+  </v-container>
 </template>
 
 <script setup>
-import BasePage from '../components/BasePage.vue'
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 </script>

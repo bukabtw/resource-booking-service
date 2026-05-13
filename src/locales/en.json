@@ -10,6 +10,7 @@
   },
   "notFound": {
     "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved.",
     "goHome": "Go home"
   },
   "language": {
@@ -88,6 +89,7 @@
     }
   },
   "calendar": {
+    "today": "Today",
     "resource": "Resource",
     "noResources": "No active resources",
     "goToResources": "Add resources",

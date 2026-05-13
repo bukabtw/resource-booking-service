@@ -19,7 +19,7 @@
           <v-btn icon="mdi-chevron-right" variant="text" @click="nextWeek" />
         </v-col>
         <v-col cols="auto">
-          <v-btn variant="outlined" size="small" @click="currentWeek">Сегодня</v-btn>
+          <v-btn variant="outlined" size="small" @click="currentWeek">{{ $t('calendar.today') }}</v-btn>
         </v-col>
         <v-spacer />
         <v-col cols="auto">
