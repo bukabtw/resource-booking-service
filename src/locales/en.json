@@ -30,7 +30,7 @@
       "equipment": "Equipment"
     }
   },
-  "common": {
+"common": {
     "cancel": "Cancel",
     "save": "Save",
     "add": "Add",
@@ -42,7 +42,8 @@
     "responsible": "Responsible",
     "status": "Status",
     "actions": "Actions",
-    "filterByType": "Filter by type"
+    "filterByType": "Filter by type",
+    "resource": "Resource"
   },
   "status": {
     "active": "Active",

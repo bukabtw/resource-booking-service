@@ -30,7 +30,7 @@
       "equipment": "Оборудование"
     }
   },
-  "common": {
+"common": {
     "cancel": "Отмена",
     "save": "Сохранить",
     "add": "Добавить",
@@ -42,7 +42,8 @@
     "responsible": "Ответственный",
     "status": "Статус",
     "actions": "Действия",
-    "filterByType": "Фильтр по типу"
+    "filterByType": "Фильтр по типу",
+    "resource": "Ресурс"
   },
   "status": {
     "active": "Активен",
