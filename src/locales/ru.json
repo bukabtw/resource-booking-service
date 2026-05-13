@@ -47,5 +47,31 @@
   "status": {
     "active": "Активен",
     "inactive": "Неактивен"
+  },
+  "bookings": {
+    "newBooking": "Новое бронирование",
+    "empty": "Бронирований нет",
+    "createFirst": "Создать первое бронирование",
+    "confirm": "Подтвердить",
+    "reject": "Отклонить",
+    "delete": "Удалить",
+    "deleteConfirm": "Удалить бронирование?",
+    "statuses": {
+      "confirmed": "Подтверждено",
+      "pending": "Ожидает",
+      "rejected": "Отклонено"
+    },
+    "form": {
+      "resource": "Ресурс",
+      "title": "Название мероприятия",
+      "date": "Дата",
+      "startTime": "Время начала",
+      "endTime": "Время окончания",
+      "participants": "Участники (email через запятую)",
+      "cancel": "Отмена",
+      "submit": "Забронировать",
+      "resourceInfo": "Информация о ресурсе",
+      "existingBookings": "Бронирования на эту дату"
+    }
   }
 }

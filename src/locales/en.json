@@ -47,5 +47,31 @@
   "status": {
     "active": "Active",
     "inactive": "Inactive"
+  },
+  "bookings": {
+    "newBooking": "New Booking",
+    "empty": "No bookings",
+    "createFirst": "Create first booking",
+    "confirm": "Confirm",
+    "reject": "Reject",
+    "delete": "Delete",
+    "deleteConfirm": "Delete booking?",
+    "statuses": {
+      "confirmed": "Confirmed",
+      "pending": "Pending",
+      "rejected": "Rejected"
+    },
+    "form": {
+      "resource": "Resource",
+      "title": "Event title",
+      "date": "Date",
+      "startTime": "Start time",
+      "endTime": "End time",
+      "participants": "Participants (comma-separated emails)",
+      "cancel": "Cancel",
+      "submit": "Book",
+      "resourceInfo": "Resource info",
+      "existingBookings": "Bookings on this date"
+    }
   }
 }
