@@ -2,7 +2,6 @@
   <BasePage>
     <template #header>{{ $t('app.bookings') }}</template>
 
-    <!-- Уведомление -->
     <v-snackbar
       v-model="store.state.notification.visible"
       :color="store.state.notification.type"
@@ -15,7 +14,6 @@
       </template>
     </v-snackbar>
 
-    <!-- Фильтры и кнопка -->
     <BaseCard>
       <v-row align="center">
         <v-col cols="12" sm="3">
@@ -119,7 +117,6 @@
       </v-btn>
     </BaseCard>
 
-    <!-- Подтверждение удаления -->
     <ConfirmDialog
       v-model="deleteDialog"
       @confirm="handleDelete"
@@ -134,11 +131,13 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useStore } from 'vuex'
 import BasePage from '../components/BasePage.vue'
 import BaseCard from '../components/BaseCard.vue'
 import ConfirmDialog from '../components/ConfirmDialog.vue'
 
+const { t } = useI18n()
 const store = useStore()
 
 // Фильтры
@@ -147,22 +146,22 @@ const filterResource = ref(null)
 const filterDate = ref('')
 
 const statusOptions = [
-  { title: 'Ожидает', value: 'pending' },
-  { title: 'Подтверждено', value: 'confirmed' },
-  { title: 'Отклонено', value: 'rejected' }
+  { title: t('bookings.statuses.pending'), value: 'pending' },
+  { title: t('bookings.statuses.confirmed'), value: 'confirmed' },
+  { title: t('bookings.statuses.rejected'), value: 'rejected' }
 ]
 
-const headers = [
-  { title: 'Ресурс', key: 'resourceId' },
-  { title: 'Название', key: 'title' },
-  { title: 'Дата', key: 'date' },
-  { title: 'Начало', key: 'startTime' },
-  { title: 'Конец', key: 'endTime' },
-  { title: 'Статус', key: 'status' },
-  { title: 'Участники', key: 'participants' },
-  { title: 'Создал', key: 'createdBy' },
-  { title: 'Действия', key: 'actions', sortable: false }
-]
+const headers = computed(() => [
+  { title: t('bookings.table.resource'), key: 'resourceId' },
+  { title: t('bookings.table.title'), key: 'title' },
+  { title: t('bookings.table.date'), key: 'date' },
+  { title: t('bookings.table.startTime'), key: 'startTime' },
+  { title: t('bookings.table.endTime'), key: 'endTime' },
+  { title: t('bookings.table.status'), key: 'status' },
+  { title: t('bookings.table.participants'), key: 'participants' },
+  { title: t('bookings.table.createdBy'), key: 'createdBy' },
+  { title: t('bookings.table.actions'), key: 'actions', sortable: false }
+])
 
 const resourceOptions = computed(() =>
   store.getters.allResources.map(r => ({ title: r.name, value: r.id }))

@@ -36,10 +36,9 @@
         />
         <v-row>
           <v-col cols="12" sm="4">
-            <v-text-field
+            <v-date-input
               v-model="form.date"
               :label="$t('bookings.form.date')"
-              type="date"
               variant="outlined"
               class="mb-3"
               :min="today"

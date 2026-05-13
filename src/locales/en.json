@@ -61,7 +61,7 @@
       "pending": "Pending",
       "rejected": "Rejected"
     },
-    "form": {
+"form": {
       "resource": "Resource",
       "title": "Event title",
       "date": "Date",
@@ -72,6 +72,17 @@
       "submit": "Book",
       "resourceInfo": "Resource info",
       "existingBookings": "Bookings on this date"
+    },
+    "table": {
+      "resource": "Resource",
+      "title": "Title",
+      "date": "Date",
+      "startTime": "Start",
+      "endTime": "End",
+      "status": "Status",
+      "participants": "Participants",
+      "createdBy": "Created by",
+      "actions": "Actions"
     }
   }
 }

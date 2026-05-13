@@ -61,7 +61,7 @@
       "pending": "Ожидает",
       "rejected": "Отклонено"
     },
-    "form": {
+"form": {
       "resource": "Ресурс",
       "title": "Название мероприятия",
       "date": "Дата",
@@ -72,6 +72,17 @@
       "submit": "Забронировать",
       "resourceInfo": "Информация о ресурсе",
       "existingBookings": "Бронирования на эту дату"
+    },
+    "table": {
+      "resource": "Ресурс",
+      "title": "Название",
+      "date": "Дата",
+      "startTime": "Начало",
+      "endTime": "Конец",
+      "status": "Статус",
+      "participants": "Участники",
+      "createdBy": "Создал",
+      "actions": "Действия"
     }
   }
 }
