@@ -1,7 +1,7 @@
 <template>
   <BasePage>
     <template #header>{{ $t('app.stats') }}</template>
-    <v-row>
+    <v-row class="mb-4">
       <v-col cols="12" sm="6" md="3">
         <BaseStatCard color="primary" icon="mdi-folder" :value="store.getters.totalResources">
           <template #label>{{ $t('stats.totalResources') }}</template>

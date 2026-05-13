@@ -1,5 +1,5 @@
 <template>
-  <v-card :color="color" class="text-white text-center pa-6" elevation="3">
+  <v-card :color="color" class="stat-card text-center pa-6" elevation="3">
     <slot name="icon"><v-icon size="48">{{ icon }}</v-icon></slot>
     <div class="text-h3 mt-2">
       <slot name="value" :value="value" :formattedValue="formattedValue">{{ formattedValue }}</slot>
@@ -19,3 +19,5 @@ const props = defineProps({
 
 const formattedValue = computed(() => props.value.toString())
 </script>
+
+

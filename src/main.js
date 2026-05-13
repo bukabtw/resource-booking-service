@@ -14,17 +14,38 @@ const vuetify = createVuetify({
   directives,
   icons: { defaultSet: 'mdi' },
   theme: {
-    defaultTheme: 'light',
+    defaultTheme: 'dark',
     themes: {
-      light: {
+      dark: {
+        dark: true,
         colors: {
-          primary: '#667eea',
-          secondary: '#764ba2',
-          error: '#dc3545',
-          success: '#21ba45',
-          warning: '#fb8c00',
-          info: '#2185d0',
-          background: '#f5f5f5'
+          background: '#0a0a1a',
+          surface: 'rgba(255, 255, 255, 0.05)',
+          primary: '#7c3aed',
+          secondary: '#a78bfa',
+          accent: '#06b6d4',
+          error: '#ef4444',
+          success: '#10b981',
+          warning: '#f59e0b',
+          info: '#3b82f6',
+          'on-background': '#ffffff',
+          'on-surface': '#ffffff',
+        }
+      },
+      light: {
+        dark: false,
+        colors: {
+          background: '#f0f2f5',
+          surface: 'rgba(255, 255, 255, 0.7)',
+          primary: '#7c3aed',
+          secondary: '#a78bfa',
+          accent: '#06b6d4',
+          error: '#ef4444',
+          success: '#10b981',
+          warning: '#f59e0b',
+          info: '#3b82f6',
+          'on-background': '#1a1a2e',
+          'on-surface': '#1a1a2e',
         }
       }
     }

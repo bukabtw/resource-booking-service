@@ -240,12 +240,12 @@ onMounted(() => {
 
 .calendar-row {
   display: flex;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--glass-border);
   min-height: 80px;
 }
 
 .header-row {
-  background: #f5f5f5;
+  background: var(--glass-bg-header);
   font-weight: bold;
   min-height: 60px;
 }
@@ -254,7 +254,7 @@ onMounted(() => {
   flex: 1;
   min-width: 120px;
   padding: 8px;
-  border-right: 1px solid #e0e0e0;
+  border-right: 1px solid var(--glass-border);
   display: flex;
   flex-direction: column;
 }
@@ -262,7 +262,7 @@ onMounted(() => {
 .resource-header, .resource-cell {
   flex: 0 0 180px;
   min-width: 180px;
-  background: #fafafa;
+  background: var(--glass-bg-header);
   justify-content: center;
 }
 
@@ -272,13 +272,9 @@ onMounted(() => {
   align-items: center;
 }
 
-.day-header.today {
-  background: #e3f2fd;
-}
-
 .day-name {
   font-size: 0.8rem;
-  color: #666;
+  color: var(--glass-text-secondary);
 }
 
 .day-date {
@@ -293,7 +289,7 @@ onMounted(() => {
 }
 
 .day-cell:hover {
-  background: #f5f5f5;
+  background: var(--glass-bg-hover);
 }
 
 .booking-block {
@@ -308,16 +304,6 @@ onMounted(() => {
   transform: scale(1.02);
 }
 
-.booking-block.status-confirmed {
-  background: #c8e6c9;
-  border-left: 3px solid #4caf50;
-}
-
-.booking-block.status-pending {
-  background: #ffe0b2;
-  border-left: 3px solid #ff9800;
-}
-
 .booking-time {
   font-weight: bold;
   font-size: 0.7rem;
@@ -330,7 +316,7 @@ onMounted(() => {
 }
 
 .free-slot {
-  color: #ccc;
+  color: var(--glass-text-secondary);
   font-size: 0.8rem;
   text-align: center;
   flex: 1;
@@ -345,6 +331,6 @@ onMounted(() => {
 
 .resource-type {
   font-size: 0.75rem;
-  color: #888;
+  color: var(--glass-text-secondary);
 }
 </style>
