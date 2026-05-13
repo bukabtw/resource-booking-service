@@ -195,10 +195,8 @@ const prevWeek = () => weekOffset.value--
 const nextWeek = () => weekOffset.value++
 const currentWeek = () => weekOffset.value = 0
 
-// Ресурсы
 const activeResources = computed(() => store.getters.activeResources)
 
-// Бронирования
 const getBookingsForDay = (resourceId, date) => {
   return store.getters.allBookings.filter(b => 
     b.resourceId === resourceId && b.date === date && b.status !== 'rejected'

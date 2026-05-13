@@ -61,7 +61,6 @@
       </v-row>
     </BaseCard>
 
-    <!-- Таблица -->
     <BaseCard v-if="filteredBookings.length > 0">
       <v-data-table
         :items="filteredBookings"
@@ -108,7 +107,6 @@
       </v-data-table>
     </BaseCard>
 
-    <!-- Пустой список -->
     <BaseCard v-else class="pa-8 text-center">
       <v-icon size="64" color="grey">mdi-book-open-outline</v-icon>
       <p class="text-h6 text-grey mt-4">{{ $t('bookings.empty') }}</p>
@@ -140,7 +138,6 @@ import ConfirmDialog from '../components/ConfirmDialog.vue'
 const { t } = useI18n()
 const store = useStore()
 
-// Фильтры
 const filterStatus = ref(null)
 const filterResource = ref(null)
 const filterDate = ref('')
@@ -184,7 +181,6 @@ const filteredBookings = computed(() => {
   return bookings
 })
 
-// Действия
 const updateStatus = (id, status) => {
   store.dispatch('updateBookingStatus', { id, status })
 }

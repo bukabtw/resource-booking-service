@@ -101,5 +101,30 @@
   },
   "bookingForm": {
     "emailHint": "Enter email separated by commas"
+  },
+  "stats": {
+    "totalResources": "Total resources",
+    "activeResources": "Active",
+    "totalBookings": "Total bookings",
+    "pendingBookings": "Pending",
+    "bookingStatuses": "Booking statuses",
+    "confirmationRate": "Confirmation rate",
+    "confirmationRateDesc": "Ratio of confirmed bookings to total",
+    "popularResources": "Popular resources",
+    "resourcesByType": "Resources by type",
+    "bookingsByDay": "Bookings by day",
+    "noData": "No data to display"
+  },
+  "about": {
+    "projectTitle": "Resource Booking Service",
+    "description": "This project is aimed at developing a convenient service for organizing and managing the booking of shared resources such as conference rooms, staff and equipment.",
+    "features": "Key features",
+    "feature1": "Booking calendar with visual grid",
+    "feature2": "Automatic time conflict detection",
+    "feature3": "Resource management (add, edit, delete)",
+    "feature4": "Resource usage statistics",
+    "technologies": "Technology stack",
+    "contact": "Contact",
+    "contactText": "Project developed as part of an internship. Contact via GitHub."
   }
 }
