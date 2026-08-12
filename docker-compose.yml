@@ -1,0 +1,25 @@
+services:
+  backend:
+    build: ./backend
+    container_name: rbs-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - RBS_DATABASE_URL=sqlite:///./booking.db
+    volumes:
+      - backend-data:/app/data
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: rbs-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  backend-data:
